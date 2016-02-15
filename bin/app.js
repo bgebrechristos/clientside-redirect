@@ -12,6 +12,7 @@ program
     .version(pkg.version)
 	.usage('\<[options] file\>')
 	.option('-F, --file <item>', 'Path to a file, containing a newline separated list of URLs')
+    .option('-U, --url <item>', 'URL(s) separated by a comma, Eg- \"http://www.apple.com\"')
 	.parse(process.argv);
 
 
@@ -42,6 +43,14 @@ if (process.argv.length <= 2) {
 		});
 		
 	} //end of program.file
+    if(program.url) {
+        var option = program.url.split(',');
+        checkForAuth(option).then(function(links) {
+           terminal.output(links); 
+        }, function(err) {
+            error(err);
+        });
+    }
 } //close main else
 
 

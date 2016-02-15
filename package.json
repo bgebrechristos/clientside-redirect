@@ -1,5 +1,5 @@
 {
-  "name": "brook-client-redirect",
+  "name": "clientside-redirect",
   "version": "1.0.4",
   "bin": {
     "brook-client-redirect": "./bin/app.js"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bgebrechristos/brook-client-redirect.git"
+    "url": "git+https://github.com/bgebrechristos/clientside-redirect.git"
   },
   "keywords": [
     "redirect",
@@ -20,12 +20,11 @@
   "author": "Brook Gebrechristos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bgebrechristos/brook-client-redirect/issues"
+    "url": "https://github.com/bgebrechristos/clientside-redirect/issues"
   },
-  "homepage": "https://github.com/bgebrechristos/brook-client-redirect#readme",
+  "homepage": "https://github.com/bgebrechristos/clientside-redirect#readme",
   "dependencies": {
     "chalk": "^1.1.1",
-    "cheerio": "^0.20.0",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "progress": "^1.1.8",
